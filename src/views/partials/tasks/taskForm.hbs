@@ -1,20 +1,31 @@
-{{! action: a donde enviara los datos }}
-<form action="/tasks/add" method="POST">
-  {{! name: con que nombre envia los datos }}
-  <div>
-    <label for="title">Write a title:</label>
-    <input type="text" name="title" placeholder="Title" id="title" />
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
 
-  </div>
-  <div>
-    <label for="description">Write a description:</label>
-    <textarea
-      name="description"
-      placeholder="Description"
-      id="description"
-    ></textarea>
+  <h1>Add A Task</h1>
 
-  </div>
-  <button>Add</button>
+  {{! action: a donde enviara los datos }}
+  <form action="/tasks/add" method="POST">
+    {{! name: con que nombre envia los datos }}
+    <div>
+      <label for="title">Write a title:</label>
+      <input 
+        type="text" 
+        name="title" 
+        placeholder="Title" 
+        id="title" 
+        class="form-control rounded-0 bg-dark text-white"/>
 
-</form>
+    </div>
+    <div>
+      <label for="description">Write a description:</label>
+      <textarea
+        name="description"
+        placeholder="Description"
+        id="description"
+        class="form-control rounded-0 bg-dark text-white"
+      ></textarea>
+
+    </div>
+    <button class="btn btn-primary btn-sm mt-2">Add</button>
+
+  </form>
+</div>
